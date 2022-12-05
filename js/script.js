@@ -43,7 +43,7 @@ const tbody = document.getElementById('table-tbody');
 for (let i = 0; i < team.length; i++) {
     const member = team[i];
 
-    //milestone 2: display as table
+    //milestone 2: display the table
     //create tr element
     const tr = document.createElement('tr');
 
