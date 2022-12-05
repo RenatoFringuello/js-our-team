@@ -37,12 +37,23 @@ const team = [
         imgName : 'barbara-ramos-graphic-designer.jpg'
     }
 ];
+const tbody = document.getElementById('table-tbody');
 
 //milestone 1: print all info of all members
 for (let i = 0; i < team.length; i++) {
     const member = team[i];
+
+    //milestone 2: display as table
+    //create tr element
+    const tr = document.createElement('tr');
+
     for(let keyMember in member){
+        //create element td
+        const td = document.createElement('td');
+        td.innerText = member[keyMember];
+        tr.append(td);
         console.log(member[keyMember]);
     }
+    tbody.append(tr);
     console.log('--------------');
 }
