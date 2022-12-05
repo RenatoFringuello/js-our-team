@@ -1,3 +1,4 @@
+//milestone 0: import all data of members in a array of "oggetto letterale"
 const team = [
     {
         firstName: 'Wayne', 
@@ -36,3 +37,12 @@ const team = [
         imgName : 'barbara-ramos-graphic-designer.jpg'
     }
 ];
+
+//milestone 1: print all info of all members
+for (let i = 0; i < team.length; i++) {
+    const member = team[i];
+    for(let keyMember in member){
+        console.log(member[keyMember]);
+    }
+    console.log('--------------');
+}
